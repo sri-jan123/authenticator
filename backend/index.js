@@ -17,7 +17,12 @@ const connectDB=async()=>{
     }
 }
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://authenticator-sand.vercel.app",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
 app.use('/api/auth',authRoute)
