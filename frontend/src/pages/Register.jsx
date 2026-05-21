@@ -21,7 +21,7 @@ const Register = () => {
       });
       if (res.data) {
         toast.success("User registered successfully");
-        navigate('/login');
+        navigate('/');
       } else {
         toast.error("Something went wrong");
       }
