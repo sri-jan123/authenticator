@@ -7,7 +7,7 @@ const LogoutButton = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:4000/api/auth/logout");
+      await axios.post("https://authenticator-t7zy.onrender.com/api/auth/logout");
 
       localStorage.removeItem("auth");
 
